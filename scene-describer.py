@@ -199,7 +199,7 @@ def create_collage_for_video(video_folder, cols=5, thumb_size=(320, 180)):
     collage_path = os.path.join(video_folder, "collage.jpg")
 
     if not os.path.exists(frames_path):
-        print(f"⏭️ Пропускаю: {video_folder} (нет папки frames/)")
+        print(f"⏭️ Skip: {video_folder} (no folder frames/)")
         return
 
     # Combining all screenshots .jpg 
